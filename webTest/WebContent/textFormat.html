@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body {background-color: red}
+	p{margin-left: 20px}
+</style>
+</head>
+<body background="http://img.bizhi.sogou.com/images/2012/03/14/"><!-- 124196.jpg   背景图片 -->
+	<a name="aaa">AAA</a>
+	<br/>
+	<b>This text is bold</b>
+	<br />
+	<strong>This text is strong</strong>
+	<br />
+	<big>This text is big</big>
+	<br />
+	<em>This text is emphasized</em>
+	<br />
+	<i>This text is italic</i>
+	<br />
+	<small>This text is small</small>
+	<br /> This text contains
+	<sub>superscript</sub>
+	<br /> This text contains
+	<sub>subscript</sub>
+
+	<!-- 预格式文本标签"<pre></pre>" -->
+	<pre>
+		这是
+		预格式文本。
+		它保留了      空格
+		和换行
+	</pre>
+	<p>pre 标签很合适显示计算机代码：</p>
+	<pre>
+	for i = 1 to 10
+		print i
+	next i
+	</pre>
+
+	<!-- 计算机代码显示标签 -->
+	<code>Computer code</code>
+	<br />
+	<kbd>Keyboard input</kbd>
+	<br />
+	<tt>Teletype</tt>
+	<br />
+	<samp>Sample text</samp>
+	<br />
+	<var>Computer variable</var>
+
+	<p>
+		<b>注释：</b>这些标签常用语显示计算机/编程代码
+	</p>
+
+	<!-- 地址 -->
+	<address>
+		Written by <a href="mailto:webmaster@example.com">Donald Duck</a>.<br />
+		Visit us at:<br /> Example.com<br /> Box 564,Disneyland<br /> USA
+	</address>
+
+	<!-- 文字方向 -->
+	<p>如果你的浏览器支持bi-directional override (bdo),下一行会从右向左输出 (rtl);</p>
+	<bdo dir="rtl"> Here is some Hebrew text </bdo>
+
+	<!-- 块引用 -->
+	这是一个长引用：
+	<blockquote>
+		这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。
+		这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。这是一个长引用。这是长引用。</blockquote>
+	这是一个短引用：
+	<q> 这是一个短引用。 </q> 使用blockquote元素的话，浏览器会插入换行和外边框，而q元素不会有任何特殊的呈现。
+
+
+	<!-- 删除和下划线 -->
+	<p>
+		一打有
+		<del>二十</del>
+		<ins>十二</ins>
+		件。
+	</p>
+
+	<p>大多数浏览器会改写为删除文本和下划线文本。</p>
+
+	<p>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。</p>
+	
+	<p>
+		<a href="/webTest/index.html">本文本</a>
+		是指向一个本站的页面连接。
+	</p>
+	<p>
+		<a href="http://wwww.baidu.com">度娘</a>这是一个跳转到度娘的连接
+	</p>
+	<!-- 图像连接 -->
+	<a href="http://www.iqiyi.com/a_19rrhb1a9l.html?vfm=2008_aldbd" target="_blank"><!-- target="_blank"在新标签页中显示 -->
+		<img src="http://img.bizhi.sogou.com/images/2012/03/14/124196.jpg?f=download" width="150px" height="150px" alt="替代图片的文本">龙珠Z<!-- alt属性：当图片无法正常显示的时候显示 -->
+	</a>
+	<br/>
+	<a href="#aaa">连接到name属性为aaa的位置</a>
+</body>
+</html>
