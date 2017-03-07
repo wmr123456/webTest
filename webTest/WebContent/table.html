@@ -5,6 +5,187 @@
 <title>table test</title>
 </head>
 <body>
-	
+	<h4>带普通边框</h4>
+	<table border="1">
+		<tr>
+			<td>First</td>
+			<td>Row</td>
+		</tr>
+		<tr>
+			<td>Second</td>
+			<td>Row</td>
+		</tr>
+	</table>
+
+	<h4>粗边框</h4>
+	<table border="8">
+		<tr>
+			<td>First</td>
+			<td>Row</td>
+		</tr>
+		<tr>
+			<td>Second</td>
+			<td>Row</td>
+		</tr>
+	</table>
+
+	<h4>粗边框</h4>
+	<table border="15">
+		<tr>
+			<td>First</td>
+			<td>Row</td>
+		</tr>
+		<tr>
+			<td>Second</td>
+			<td>Row</td>
+		</tr>
+	</table>
+
+	<h4>没有边框的表格</h4>
+	<table border="0">
+		<tr>
+			<td>row 1, cell 1</td>
+			<td>row 1, cell 2</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>row 2, cell 2</td>
+		</tr>
+	</table>
+
+	<h4>表头</h4>
+	<table border="1">
+		<tr>
+			<th>姓名</th>
+			<th>电话</th>
+			<th>电话</th>
+		</tr>
+		<tr>
+			<th>Bill Mike</th>
+			<th>15132565444</th>
+			<th>15845603258</th>
+		</tr>
+	</table>
+	<h4>垂直表头</h4>
+	<table border="1">
+		<tr>
+			<th>姓名</th>
+			<td>Bill Mike</td>
+		</tr>
+		<tr>
+			<th>电话</th>
+			<td>14532145698</td>
+		</tr>
+	</table>
+
+	<h4>跨行跨列</h4>
+	<table border="1">
+		<tr>
+			<th>姓名
+			</td>
+			<th colspan="2">电话
+			</td>
+		</tr>
+		<tr>
+			<td>Bill Mike</td>
+			<td>11111111111</td>
+			<td>11111111111</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Micheal Jordan</td>
+			<td colspan="2">55522223333</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>11111111111</td>
+		</tr>
+	</table>
+
+	<h4>表格内标签</h4>
+	<table border="1">
+		<tr>
+			<td>
+				<p>这是一个段落</p>
+				<p>这是另一个段落</p>
+			</td>
+			<td>这个单元包含一个表格：
+				<table border="1">
+					<tr>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>D</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>这个单元格包含一个列表：
+				<ul>
+					<li>苹果</li>
+					<li>香蕉</li>
+					<li>橘子</li>
+				</ul>
+			</td>
+			<td>Hello World!</td>
+		</tr>
+	</table>
+
+	<h4>文字距边框距离</h4>
+	<table border="1" cellpadding="10">
+		<tr>
+			<td>First</td>
+			<td>Row</td>
+		</tr>
+		<tr>
+			<td>Second</td>
+			<td>Row</td>
+		</tr>
+	</table>
+
+	<h4>单元格间距</h4>
+	<table border="1" cellSpacing="10">
+		<tr>
+			<td>First</td>
+			<td>Row</td>
+		</tr>
+		<tr>
+			<td>Second</td>
+			<td>Row</td>
+		</tr>
+	</table>
+
+	<h4>单元格中文字对其方式</h4>
+	<table border="1">
+	<caption>My table</caption><!-- 表格标题 -->
+		<thead><!-- 页眉：效果字体加黑加粗 -->
+		<tr>
+			<th align="left">消费项目....</th>
+			<th align="right">一月</th>
+			<th align="right">二月</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td align="left">衣服</td>
+			<td align="right">￥30.25</td>
+			<td align="right">￥44.56</td>
+		</tr>
+		<tr>
+			<td align="left">食物</td>
+			<td align="right">$730.40</td>
+			<td align="right">$650.00</td>
+		</tr>
+		</tbody>
+		<tfoot>
+		<tr>
+			<th align="left">总计</th>
+			<th align="right">$1001.50</th>
+			<th align="right">$744.65</th>
+		</tr>
+		</tfoot>
+	</table>
 </body>
 </html>
