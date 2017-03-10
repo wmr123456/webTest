@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="index.html" autocomplete="on">
+		<!-- 对含有autocomplete的input标签自动填充-->
+		first name:<input type="text" name="fname"><br /> last name:<input
+			type="text" name="lname"><br /> E-mail:<input type="email"
+			autocomplete="off"> <input type="submit" value="submit">
+	</form>
+
+	<form action="index.html" autocomplete="on" novalidate="novalidate">
+		<!-- novalidate表单提交时不对表单数据进行验证-->
+		first name:<input type="text" name="fname" autofocus="autofocus"><br />
+		<!-- 表单加载后光标自动移动到这个标签 -->
+		last name:<input type="text" name="lname"><br /> E-mail:<input
+			type="email" autocomplete="off"> <input type="submit"
+			value="submit">
+	</form>
+
+	<form action="index.html">
+		<!-- 发送默认编码以及编码为 "multipart/form-data"（第二个提交按钮）的表单数据（form-data）： -->
+		First name:<input type="text" name="fname"><br /> <input
+			type="submit" value="submit"> <input type="submit"
+			formenctype="multipart/form-data"
+			value="Submit as Multipart/form-data">
+	</form>
+
+	<form action="index.html" method="get">
+		<!-- 改变form表单的提交方法和action提交目的地 -->
+		First name<input type="text" name="fname"> <input
+			type="submit" value="submit"> <input type="submit"
+			formmethod="post" formaction="layout.html">
+	</form>
+	<input list="browsers" >
+
+	<datalist id="browsers">
+		<option value="Internet Explorer">
+		<option value="Firefox">
+		<option value="Chrome">
+		<option value="Opera">
+		<option value="Safari">
+	</datalist>
+	
+	<input type="text" name="fname" placeholder="First name">
+	<input type="text" name="aa" required="required">
+</body>
+</html>
