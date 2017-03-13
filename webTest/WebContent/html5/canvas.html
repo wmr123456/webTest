@@ -3,6 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Html Canvas test</title>
+<!-- <script type="text/javascript">
+	window.onload = function() {
+		var c = document.getElementById("myCanvas");
+		var cxt = c.getContext("2d");
+		cxt.fillStyle = "#FF0000";
+		cxt.beginPath();
+		cxt.arc(70, 18, 15, 0, Math.PI * 2, true);
+		cxt.closePath();
+		cxt.fill();
+		
+		
+		var c2=document.getElementById("canvas2");
+		var cxt2=c2.getContext("2d");
+		var img=new Image()
+		img.src="../1.jpg"
+		cxt2.drawImage(img,0,0);
+
+		
+	}
+</script> -->
 </head>
 <body>
 	<!-- 	<canvas id="myCanvas" width="200" height="100"
@@ -24,11 +44,10 @@ Your browser does not support the canvas element.
 	<script type="text/javascript">
 		var c = document.getElementById("myCanvas");
 		var cxt = c.getContext("2d");
-		cxt.fillStyle = "#FF0000";
-		cxt.beginPath();
-		cxt.arc(70, 18, 15, 0, Math.PI * 2, true);
-		cxt.closePath();
-		cxt.fill();
+		var img = new Image()
+		img.src = "../1.jpg"
+		cxt.drawImage(img, 0, 0);
 	</script>
-</body>
+	<!-- <canvas id="canvas2" width="200" height="200" style="border: 1px solid red;"></canvas>
+</body> -->
 </html>
