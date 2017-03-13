@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>音频</h1>
+	<h6>embed</h6>
+	<embed height="100" width="100" src="../../1.mp3" />
+	<h6>object</h6>
+	<object height="100" width="100" data="../../1.mp3"></object>
+	<!-- 	<video controls="controls" autoplay="autoplay" name="media">
+		<source src="../../1.mp3" type="audio/mpeg">
+	</video> -->
+	<h6>audio标签</h6>
+	<audio controls="controls" autoplay="autoplay">
+		<source src="../../1.mp3" type="audio/mpeg" />
+	</audio>
+	<h6>最好写法</h6>
+	<audio controls="controls" height="100" width="100" autoplay="autoplay">
+		<source src="../../1.mp3" type="audio/mpeg" />
+		<source src="../../1.ogg" type="audio/ogg" />
+		<embed height="100" width="100" src="../../1.mp3" />
+	</audio>
+</body>
+</html>
