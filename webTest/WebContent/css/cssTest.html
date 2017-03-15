@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Css test</title>
+<style type="text/css">
+li strong{
+	font-style: italic;	<!--斜体 -->
+	font-weight: normal;
+}
+
+strong{
+	color: red;
+}
+h2{
+	color: yellow;
+}
+h2 strong {
+	color: blue;
+}
+
+#red{
+	color: red;
+}
+
+#green{
+	color: green;
+}
+.center{
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<p><strong>粗体字，不在例表中所以规则不起作用</strong></p>
+	<ol>
+		<li><strong>斜体字</strong></li>
+		<li>正常字体</li>
+	</ol>
+	<p>the strongly emphasized word in this paragraph is<strong>red</strong>.</p>
+	<h2>This subhead is a also yellow</h2>
+	<h2>The strongly emphasized word in this suhead is<strong>blue</strong>.</h2>
+	<p id="red">这是一段红色的文字</p>
+	<p id="green">这是一段绿色的文字</p>
+	<p class="center">this heading will is be center</p>
+</body>
+</html>
